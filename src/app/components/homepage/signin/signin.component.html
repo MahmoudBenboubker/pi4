@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-8 order-md-1">
+      <h1>Inscription</h1>
+
+      <div class="mb-3">
+          <label for="email">Email <span class="text-muted"></span></label>
+          <input type="email" class="form-control" id="email" placeholder="nom@exemple.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="password">Mot de passe <span class="text-muted"></span></label>
+            <input type="password" class="form-control" id="password" placeholder="">
+          </div>
+
+          <div class="mb-3">
+              <label for="password">Confirmer le mot de passe <span class="text-muted"></span></label>
+              <input type="password" class="form-control" id="password" placeholder="">
+            </div>
+
+      
+      <hr class="mb-4">
+      <h4 class="mb-3">Coordonnées</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Ce champ est obligatoire.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Nom</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Ce champ est obligatoire.
+            </div>
+          </div>
+        </div>
+       
+        <div class="mb-3">
+          <label for="address">Addresse</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Exemple" required>
+          <div class="invalid-feedback">
+            Please enter your address.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Ville</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choisir...</option>
+              <option>Rabat</option>
+              <option>Casablanca</option>
+              <option>Fès</option>
+              <option>Marrakech</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Région</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choisir...</option>
+              <option>Tanger-Tétouan-Al Hoceïma</option>
+              <option>Guelmim-Oued Noun</option>
+              <option> Laâyoune-Sakia El Hamra</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">CIN</label>
+            <input type="text" class="form-control" id="zip" placeholder="AB123456" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+      
+         
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmer l'inscription</button>
+      </form>
+    </div>
+  </div>
+
+ 
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="form-validation.js"></script>

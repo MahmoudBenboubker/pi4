@@ -1,0 +1,35 @@
+
+<h1> Parcelles </h1>
+
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Texte</th>
+        <th>Province</th>
+        <th>Programme</th>
+        <th>Sous Projet</th>
+        <th>Statut foncier</th>
+        <th>Proprietaire</th>
+        <th>CIN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--   for (Todo todo: todos) {  -->
+              <tr *ngFor="let parcelle of parcelles">
+                <td>{{parcelle.id}}</td>
+                <td>{{parcelle.text}}</td>
+                <td>{{parcelle.province}}</td>
+                <td>{{parcelle.programme}}</td>
+                <td>{{parcelle.sous_proj}}</td>                
+                <td>{{parcelle.statut_fon}}</td>
+                <td>{{parcelle.proprietai}}</td>
+                <td>{{parcelle.cin}}</td>
+              </tr>
+      <!-- } -->
+    </tbody>
+
+  </table>
+</div>

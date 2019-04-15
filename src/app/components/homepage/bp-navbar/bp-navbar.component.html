@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" routerLink="/">Web-Map</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link"  *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/map"  >Carte</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/parcelles"  >Parcelles</a>
+          </li>
+    </ul>
+      <button class="btn btn-outline-success my-2 my-sm-0"  *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login">Connexion</button>
+      <button class="btn btn-outline-success my-2 my-sm-1" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout">Déconnexion</button>
+  </div>
+</nav>
