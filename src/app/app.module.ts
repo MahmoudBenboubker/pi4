@@ -19,6 +19,7 @@ import { LogoutComponent } from './components/homepage/logout/logout.component';
 import { BpFooterComponent } from './components/homepage/bp-footer/bp-footer.component';
 import { HttpIntercepterBasicAuthService } from './services/Http/http-intercepter-basic-auth.service';
 import { ErrorComponent } from './components/homepage/error/error.component';
+import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ErrorComponent } from './components/homepage/error/error.component';
     LogoutComponent,
     BpFooterComponent,
     ErrorComponent,
+    DashboardComponent,
     ],
   imports: [
     BrowserModule,

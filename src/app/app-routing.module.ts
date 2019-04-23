@@ -7,6 +7,7 @@ import { MapComponent } from './components/homepage/map/map.component';
 import { ParcellesComponent } from './components/homepage/parcelles/parcelles.component';
 import { ErrorComponent } from './components/homepage/error/error.component';
 import { LogoutComponent } from './components/homepage/logout/logout.component';
+import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 
 const routes: Routes = [
 
@@ -17,7 +18,7 @@ const routes: Routes = [
   { path : 'map', component : MapComponent},
   { path : 'parcelles', component : ParcellesComponent},
   { path : 'logout', component : LogoutComponent},
-
+  { path : 'dashboard', component : DashboardComponent},
 
 
 
