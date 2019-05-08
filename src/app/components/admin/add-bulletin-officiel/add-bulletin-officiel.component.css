@@ -1,0 +1,15 @@
+h1{
+    padding-bottom: 40px;
+}
+
+.btn{
+    margin-top: 25px;
+}
+
+.alert{
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+#bread_crumb{
+    float: left;
+}

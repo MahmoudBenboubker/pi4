@@ -20,6 +20,10 @@ import { BpFooterComponent } from './components/homepage/bp-footer/bp-footer.com
 import { HttpIntercepterBasicAuthService } from './services/Http/http-intercepter-basic-auth.service';
 import { ErrorComponent } from './components/homepage/error/error.component';
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
+import { AddParcelleComponent } from './components/admin/add-parcelle/add-parcelle.component';
+import { AddBulletinOfficielComponent } from './components/admin/add-bulletin-officiel/add-bulletin-officiel.component';
+import { BulletinOfficielComponent } from './components/homepage/bulletin-officiel/bulletin-officiel.component';
+import { ModifieBulletinOfficielComponent } from './components/admin/modifie-bulletin-officiel/modifie-bulletin-officiel.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import { DashboardComponent } from './components/admin/dashboard/dashboard.compo
     BpFooterComponent,
     ErrorComponent,
     DashboardComponent,
+    AddParcelleComponent,
+    AddBulletinOfficielComponent,
+    BulletinOfficielComponent,
+    ModifieBulletinOfficielComponent,
     ],
   imports: [
     BrowserModule,
@@ -47,6 +55,7 @@ import { DashboardComponent } from './components/admin/dashboard/dashboard.compo
       { path: 'map', component: MapComponent},
       { path: 'parcelles', component: ParcellesComponent},
       { path: 'logout', component: LogoutComponent},
+      {path: 'addParcelle', component: AddParcelleComponent}
     ])
   ],
   providers: [

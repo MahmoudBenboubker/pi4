@@ -1,0 +1,24 @@
+<div class="col-md-10 change">      
+
+  <label>Numéro de la parcelle :</label>
+  <input type="text" class="form-control col-md-4" placeholder="123456" [(ngModel)]= "idParcelle" />
+  <hr class="col-md-5">
+
+  <label>Numéro CIN :</label>
+  <input type="text" class="form-control col-md-4" placeholder="BX106378" [(ngModel)]= "cin" />
+
+  <label>Nom du propriétaire :</label>
+  <input type="text" class="form-control col-md-4" placeholder="Azim Yassine" [(ngModel)]= "nomPropietaire" />
+
+  <hr class="col-md-5">
+
+  <label>Coordonnées :</label>
+  <input type="text" class="form-control col-md-4" placeholder="123456" [(ngModel)]= "coordonnees" />
+  <hr class="col-md-5">
+
+  <label for="comment">Données relative à la parcelle :</label>
+  <textarea class="form-control col-md-4" rows="3" placeholder="Saisissez les données"></textarea>
+
+  <button class="btn btn-primary" (click)="ajouterNouvelleParcelle()">Ajouter</button>
+
+</div> 
