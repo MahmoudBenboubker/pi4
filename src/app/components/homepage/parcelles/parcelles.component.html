@@ -1,0 +1,53 @@
+
+<h2> Liste des parcelles </h2>
+
+<a routerLink="/addParcelle" class="text-decoration-none">Ajouter une  nouvelle parcelle</a>
+<i class="fas fa-sync" id="actualiser" (click)="refresh()"></i>
+<br/>
+<p>Rechercher une parcelle précise</p>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Numéro de la parcelle" aria-label="Recipient's username" aria-describedby="button-addon2" (input)="idParcelle = $event.target.value" >
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" (click)="searchParcelle()" type="button" id="button-addon2">Rechercher</button>
+  </div>
+</div>
+
+
+<div  class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Numero Parcelle</th>
+        <th>Regime Foncier</th>
+        <th>Statut Foncier</th>
+        <th>CIN</th>
+        <th>Proprietaire</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--   for (Todo todo: todos) {  -->
+              <tr *ngFor="let parcelle of parcelles">
+                  
+                <td>{{parcelle.num_parcelle}}</td>
+                  
+                <td>{{parcelle.regimeFoncier}}</td>
+                <td>{{parcelle.statutFoncier}}</td>
+                <td>{{parcelle.listDesProprietaires[0].cin}}</td>   
+                <td>{{parcelle.listDesProprietaires[0].nomEtPrenom}}</td>
+                <td> <button type="button"  class="btn btn-link"> Modifier </button></td>
+                <td> <button type="button" (click)="deleteParcelle(parcelle.id)" class="btn btn-link"> Supprimer </button></td>
+              </tr>
+
+              <td>{{parcelle.num_parcelle}}</td>   
+              <td>{{parcelle.regimeFoncier}}</td>
+              <td>{{parcelle.statutFoncier}}</td>
+              <td>{{parcelle.listDesProprietaires[0].cin}}</td>   
+              <td>{{parcelle.listDesProprietaires[0].nomEtPrenom}}</td>
+              
+
+      <!-- } -->
+    </tbody>
+
+  </table>
+</div>

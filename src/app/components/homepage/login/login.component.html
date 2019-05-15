@@ -1,0 +1,19 @@
+
+<body>
+ <form class="form-signin">
+  <h1 class="h3 mb-3 font-weight-normal">IDENTIFICATION</h1>
+  <label for="inputEmail" class="sr-only">Adresse Email</label>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Email"   required autofocus >
+  <label for="inputPassword" class="sr-only">Mot de Passe</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Mot de Passe" (input)="password = $event.target.value" required >
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="Se souvenir de moi "> Se souvenir de moi 
+    </label>
+  </div>
+  <button routerLink="{{redirectionPath}}" class="btn btn-lg btn-primary btn-block" type="submit" (click)="handleJWTAuthLogin()">Se connecter</button>
+  <a routerLink="/signin" class="text-decoration-none">Créer un compte</a>
+  <br> <div  class="alert alert-warning" *ngIf="invalidLogin">  {{errorMessage}}</div>
+</form>
+
+</body>

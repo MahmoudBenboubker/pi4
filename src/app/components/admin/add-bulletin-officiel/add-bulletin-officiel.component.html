@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+  <h1>Création d'un nouveau bulletin officiel</h1>
+
+  <div class="col-md-10 addBo">
+      <a routerLink="/bulletinofficiels" id="bread_crumb">Liste des bulletins officiels ></a>
+      <br>
+      <br>
+      <br>
+
+      <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Numéro du bulletin officiel :</label>
+          <div class="col-sm-8">              
+              <input type="text" class="form-control col-md-4" placeholder="N194" [(ngModel)]= "bulletinofficiel.numBo" />          
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+            <label>Date de publication :</label>
+            <input type="text" class="form-control" placeholder="2019-05-02" [(ngModel)]= "bulletinofficiel.datePublication" />
+        </div>
+        <div class="col-md-4">
+            <label>Date de recupération :</label>
+            <input type="text" class="form-control" placeholder="2019-05-02" [(ngModel)]= "bulletinofficiel.dateRecuperation" />
+        </div>
+      </div> 
+      
+      <div class="alert alert-success" role="alert" *ngIf="cree">
+        Le Bulletin Officiel numéro {{bulletinofficiel.numBo}} a été crée avec succès !
+      </div>
+      <button class="btn btn-primary" (click)="ajouterNouveauBO()">Créer</button>
+    
+  </div> 
+</div>

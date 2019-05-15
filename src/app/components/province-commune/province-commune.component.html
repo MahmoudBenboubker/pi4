@@ -1,0 +1,31 @@
+
+  <div class="row">
+    <div class="col-md-4">
+      <label for="province">Province</label>
+      <select class="custom-select d-block w-100" id="province" required>
+        <option value="">Choisir la province</option>
+        <option *ngFor="let province of provinces">
+          {{province.nomProvince}}</option>
+
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid country.
+      </div>
+    </div>
+
+<!--
+    <div class="row">
+      <div class="col-md-4">
+        <label for="province">Communes</label>
+        <select class="custom-select d-block w-100" id="commune" required>
+          <option value="">Choisir la commune</option>
+          <option *ngFor="let province of provinces">
+            {{province.communes[0].nomCommune}}
+          </option>
+
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid country.
+        </div>
+      </div>
+      -->
