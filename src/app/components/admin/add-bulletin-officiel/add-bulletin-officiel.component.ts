@@ -47,6 +47,8 @@ export class AddBulletinOfficielComponent implements OnInit {
 
   // POST
   ajouterNouveauBO(){
+    console.log(this.bulletinofficiel);
+    
     if(this.boServiceService.addBo(this.bulletinofficiel).subscribe()){
       this.cree=1;
     }
