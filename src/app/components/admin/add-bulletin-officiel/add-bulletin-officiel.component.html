@@ -17,6 +17,7 @@
       <div class="row">
         <div class="col-md-4">
             <label>Date de publication :</label>
+<<<<<<< HEAD
             <input type="date" class="form-control" placeholder="2019-05-02" [(ngModel)]= "bulletinofficiel.datePublication" />
         </div>
         <div class="col-md-4">
@@ -25,6 +26,16 @@
         </div>
       </div> 
 
+=======
+            <input type="text" class="form-control" placeholder="2019-05-02" [(ngModel)]= "bulletinofficiel.datePublication" />
+        </div>
+        <div class="col-md-4">
+            <label>Date de recupération :</label>
+            <input type="text" class="form-control" placeholder="2019-05-02" [(ngModel)]= "bulletinofficiel.dateRecuperation" />
+        </div>
+      </div> 
+      
+>>>>>>> e45ff5a20ab7010dfb79543ea4e0e95ec139c2cf
       <div class="alert alert-success" role="alert" *ngIf="cree">
         Le Bulletin Officiel numéro {{bulletinofficiel.numBo}} a été crée avec succès !
       </div>

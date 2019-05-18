@@ -53,6 +53,20 @@ export class ParcellesComponent implements OnInit {
     /**/
   }
 
+<<<<<<< HEAD
+=======
+  deleteParcelle(id){
+    this.parcelleService.deleteParcelle(id).subscribe((data)=>{
+      console.log("successfully deleted !");
+      })
+  
+    }
+
+    refresh(){
+      window.location.reload();
+    }
+
+>>>>>>> e45ff5a20ab7010dfb79543ea4e0e95ec139c2cf
   searchParcelle(){
     
     if (this.idParcelle){
